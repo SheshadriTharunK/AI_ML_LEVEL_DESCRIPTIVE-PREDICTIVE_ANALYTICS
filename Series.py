@@ -21,6 +21,7 @@ print(s1.index)
 1    20
 2    30
 3    40
+
 dtype: int64
 (4,)
 RangeIndex(start=0, stop=4, step=1)
@@ -49,12 +50,15 @@ dtype: int64
 
 -- accessing and indexing 
 s2=pd.Series([10,20,30,40],index=[1,3,5,7])
-print(s2[1]) # explict index 
+print(s2[1]) #indexing refers  explicit index 
 print(s2[1:5]) # slicing refers to implicit index
 print(s2[0:3]) ## slicing refers to implicit index
 
-
-
+s2=pd.Series([10,20,30,40],index=[1,3,5,7])
+print(s2.iloc[1])
+print(s2.iloc[1:3])
+print(s2.iloc[[1,3]])
+print(s2.iloc[s2>35])
 
 
 
