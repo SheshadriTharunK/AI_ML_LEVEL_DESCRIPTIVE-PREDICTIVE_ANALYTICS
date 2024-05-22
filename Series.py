@@ -58,7 +58,27 @@ s2=pd.Series([10,20,30,40],index=[1,3,5,7])
 print(s2.iloc[1])
 print(s2.iloc[1:3])
 print(s2.iloc[[1,3]])
+print(s2.iloc[s2>35]) # iloc doesn't allows mask based indexing 
+
+#iloc -- implicit indexing 
+
+s2=pd.Series([10,20,30,40],index=[1,3,5,7])
+print(s2.iloc[1])
+print(s2.iloc[1:3])
+print(s2.iloc[[1,3]])
 print(s2.iloc[s2>35])
+
+#aggregates 
+
+print(s2.mean())
+print(s2.max())
+print(s2.min())
+print(s2.sum())
+
+
+
+
+
 
 
 
