@@ -63,10 +63,10 @@ print(s2.iloc[s2>35]) # iloc doesn't allows mask based indexing
 #iloc -- implicit indexing 
 
 s2=pd.Series([10,20,30,40],index=[1,3,5,7])
-print(s2.iloc[1])
-print(s2.iloc[1:3])
-print(s2.iloc[[1,3]])
-print(s2.iloc[s2>35])
+print(s2.loc[1]) 
+print(s2.loc[1:3])
+print(s2.loc[[1,3]])
+print(s2.loc[s2>35])
 
 #aggregates 
 
