@@ -1,0 +1,13 @@
+# FIRST MISSING POSITIVE IN  A ARRAY 
+
+l=[8,9,10,11,12,13]
+for i in range(len(l)):
+    e=l[i]
+    c=e-1
+    if 0<=c<=len(l)-1:
+         l[i],l[c]=l[c],l[i]
+for i in range(len(l)):
+    if i+1!=l[i]:
+        print(i+1)
+        exit()
+print(len(l)+1)
